@@ -21,9 +21,9 @@ public:
 		area = input;
 	}
 
-	void Show()
+	virtual void Show()
 	{
-		cout << area << endl;
+		cout <<"Figura^^^^^^^^^^^: "<< endl;
 	}
 
 	~Figura()

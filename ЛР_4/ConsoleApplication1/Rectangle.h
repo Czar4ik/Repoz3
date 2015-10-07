@@ -22,4 +22,9 @@ public:
 	{
 		cout << "Destroy Rectangle." << endl;
 	}
+
+	virtual void Show()
+	{
+		cout << "Rectangle^^^^^^^^^^^^: " << endl;
+	}
 };

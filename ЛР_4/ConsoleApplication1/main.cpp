@@ -13,38 +13,53 @@ int main()
 {
 	setlocale(LC_CTYPE, "rus");
 
-	Figura fig(10); //объект базового класса
-	cout << "Area fig: ";
-	fig.Show();
+	Figura F, *fig = &F;
+	Rectangle R, *rec = &R;
+	Figura *f = &R;
 
-	Rectangle rec(15);
-	cout << "Area rec: ";
-	rec.Show();
+	fig->Show();
+	rec->Show();
+	f->Show();
 
-	rec.sqrarea();
-	cout << "Sqr: ";
-	rec.Show();
 
-	Element el(11);
-	cout << "Element: ";
-	el.Show();
+	//Figura fig(10); //объект базового класса
+	//cout << "Area fig: ";
+	//fig.Show();
 
-	cout << "Menu: ";
-	Menu men(1111111);
-	men.Show();
-	men.func();
+	//Figura figg(15);
+	//cout << "Area fig: ";
+	//fig.Show();
 
-	cout << "Window: ";
-	Window win(333333);
-	win.Show();
-	win.func2();
+	//rec.sqrarea();
+	//cout << "Sqr: ";
+	//rec.Show();
+	//cout << endl;
+	//cout << endl;
+	//cout << endl;
+	//cout << endl;
+	//cout << endl;
 
-	cout << "Button: ";
-	Button but;
-	but.Show();
-	but.namee();
 
-	cout << endl;
+	//Element el(11);
+	//cout << "Element: ";
+	//el.Show();
+
+	//cout << "Menu: ";
+	//Menu men(1111111);
+	//men.Show();
+	//men.func();
+
+	//cout << "Window: ";
+	//Window win(333333);
+	//win.Show();
+	//win.func2();
+
+	//cout << "Button: ";
+	//Button but;
+	//but.Show();
+	//but.namee();
+
+	//cout << endl;
 	return 0;
 }
 

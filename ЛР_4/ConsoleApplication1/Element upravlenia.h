@@ -9,7 +9,8 @@ using namespace std;
 class Element //Базовый класс
 {
 protected:
-	int width; char name[100];
+	int width; 
+	char name[100];
 public:
 	Element()
 	{

@@ -11,7 +11,7 @@ public:
 	Menu() :Element() //вызов конструктора базового класса
 	{}
 
-	Menu( int wind) : Element( wind)
+	Menu(int wind) : Element(wind)
 	{}
 
 	void func()
