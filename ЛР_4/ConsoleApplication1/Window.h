@@ -20,7 +20,5 @@ public:
 	}
 
 	~Window()
-	{
-		cout << "Destructor Window!" << endl;
-	}
+	{}
 };

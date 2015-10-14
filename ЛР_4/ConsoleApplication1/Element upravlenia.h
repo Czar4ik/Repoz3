@@ -12,15 +12,19 @@ protected:
 	int width; 
 	char name[100];
 public:
+
+
 	Element()
 	{
 		width = 0;
 	};
 
+
 	Element( int wind)
 	{
 		width = wind;
 	}
+
 
 	void Show()
 	{
@@ -28,7 +32,5 @@ public:
 	}
 
 	~Element()
-	{
-		cout << "Destructor Elementa!" << endl;
-	}
+	{}
 };

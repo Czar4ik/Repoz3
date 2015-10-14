@@ -13,53 +13,43 @@ int main()
 {
 	setlocale(LC_CTYPE, "rus");
 
-	Figura F, *fig = &F;
-	Rectangle R, *rec = &R;
-	Figura *f = &R;
-
-	fig->Show();
-	rec->Show();
-	f->Show();
-
-
-	//Figura fig(10); //объект базового класса
-	//cout << "Area fig: ";
-	//fig.Show();
-
-	//Figura figg(15);
-	//cout << "Area fig: ";
-	//fig.Show();
-
-	//rec.sqrarea();
-	//cout << "Sqr: ";
-	//rec.Show();
-	//cout << endl;
-	//cout << endl;
-	//cout << endl;
-	//cout << endl;
-	//cout << endl;
+	Rectangle ocher1, ocher2;
+	int i;
+	for (i = 28; i <=40; i++)
+	{
+		ocher1.push(i);
+	}
+	cout << "Наша очередь: ";
+	ocher1.write(ocher1);
+	cout << endl;
 
 
-	//Element el(11);
-	//cout << "Element: ";
-	//el.Show();
 
-	//cout << "Menu: ";
-	//Menu men(1111111);
-	//men.Show();
-	//men.func();
+	cout << "Введите элемент: ";
+	int n;
+	cin >> n;
+	ocher1.push(n);
+	cout << "Наша новая очередь: ";
+	ocher1.write(ocher1);
+	cout << endl;
 
-	//cout << "Window: ";
-	//Window win(333333);
-	//win.Show();
-	//win.func2();
 
-	//cout << "Button: ";
-	//Button but;
-	//but.Show();
-	//but.namee();
 
-	//cout << endl;
+	cout << "Размер: ";
+	ocher1.size();
+	cout << endl;
+	
+	cout << "Последний: ";
+	ocher1.back();
+	cout << endl;
+
+	cout << "Первый: ";
+	ocher1.front();
+	cout << endl;
+
+	cout << "Текущие данные:";
+	ocher1.write(ocher1);
+	cout << endl;
 	return 0;
 }
 

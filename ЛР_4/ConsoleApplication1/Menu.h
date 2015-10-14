@@ -20,9 +20,7 @@ public:
 	}
 
 	~Menu()
-	{
-		cout << "Destructor Menu!" << endl;
-	}
+	{}
 
 
 };

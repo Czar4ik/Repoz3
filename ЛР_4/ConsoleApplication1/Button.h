@@ -22,7 +22,5 @@ public:
 	}
 
 	~Button()
-	{
-		cout << "Destructor Button!" << endl;
-	}
+	{}
 };
