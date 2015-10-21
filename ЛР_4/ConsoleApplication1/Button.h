@@ -1,26 +1,18 @@
 //Классы – Фигура, Прямоугольник, Элемент управления, Кнопка, Меню, Окно.
 
-#include "stdafx.h"
-#include "iostream"
+#pragma once
+#include"Element Upravlenia.h"
 
-using namespace std;
-
-class Button : public Element
+class Button
+	:public Element
 {
 public:
-	Button() :Element() //вызов конструктора базового класса
-	{}
+	Button(char *text = "Кнопка");
+	~Button();
 
-	Button(char name) : Element(name)
-	{}
+	void setText(char *text);
+	void getText() const;
 
-	void namee()
-	{
-		cout << "Введите имя: ";
-		cin >> name;
-		cout << "Наше имя: " << name << endl;;
-	}
-
-	~Button()
-	{}
+private:
+	char *text;
 };

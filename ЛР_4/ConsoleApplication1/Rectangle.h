@@ -1,15 +1,27 @@
 // лассы Ц ‘игура, ѕр€моугольник, Ёлемент управлени€,  нопка, ћеню, ќкно.
 
-#include "stdafx.h"
-#include "iostream"
+#pragma once
+#include "Figura.h"
 
 using namespace std;
 
-class Rectangle : public Figura
+class Rectangle
+	:public Figura
 {
 public:
-	Rectangle() :Figura() //вызов конструктора базового класса
-	{}
-	~Rectangle()
-	{}
+	Rectangle(int w = 25, char* name = "Rectangle");
+	~Rectangle();
+
+	void setName(char *name);
+	void getName() const;
+
+	void setWidth(int);
+	void getWidth() const;
+
+	static void show();
+	void add();
+
+private:
+	float width;
+	char *name;
 };

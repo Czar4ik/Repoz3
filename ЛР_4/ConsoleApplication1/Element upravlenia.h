@@ -1,36 +1,18 @@
 //Классы – Фигура, Прямоугольник, Элемент управления, Кнопка, Меню, Окно.
 
-#include "stdafx.h"
-#include "iostream"
+#pragma once
 
-using namespace std;
-
-
-class Element //Базовый класс
+class Element
 {
-protected:
-	int width; 
-	char name[100];
 public:
+	Element *next;
 
+	Element();
+	virtual ~Element();
 
-	Element()
-	{
-		width = 0;
-	};
+	virtual void setText(char *text) = 0;
+	virtual void getText() const = 0;
 
-
-	Element( int wind)
-	{
-		width = wind;
-	}
-
-
-	void Show()
-	{
-		cout << width << endl;
-	}
-
-	~Element()
-	{}
+protected:
+	static Element *head;
 };

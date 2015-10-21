@@ -1,24 +1,18 @@
 //Классы – Фигура, Прямоугольник, Элемент управления, Кнопка, Меню, Окно.
 
-#include "stdafx.h"
-#include "iostream"
+#pragma once
+#include"rectangle.h"
 
-using namespace std;
-
-class Window : public Element
+class Window
 {
+	Rectangle *rectangle;
 public:
-	Window() : Element() //вызов конструктора базового класса
-	{}
+	Window();
+	~Window();
 
-	Window(int wind) : Element(wind)
-	{}
+	void setSize(int);
+	void getSize();
 
-	void func2()
-	{
-		cout << "Width вызвался из Window: " << width << endl;
-	}
-
-	~Window()
-	{}
+private:
+	bool isActiv;
 };

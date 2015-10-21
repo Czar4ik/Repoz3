@@ -5,51 +5,32 @@
 #include "Figura.h"
 #include "Rectangle.h"
 #include "Element upravlenia.h"
-#include "Menu.h"
 #include "Window.h"
 #include "Button.h"
 
+	Figura *Figura::head = NULL;
+	Element *Element::head = NULL;
+
 int main()
 {
-	setlocale(LC_CTYPE, "rus");
+	setlocale(LC_ALL, "Rus");
 
-	Rectangle ocher1, ocher2;
-	int i;
-	for (i = 28; i <=40; i++)
-	{
-		ocher1.push(i);
-	}
-	cout << "Наша очередь: ";
-	ocher1.write(ocher1);
-	cout << endl;
+	Rectangle Rec1(1, "Rec1");
+	Rec1.add();
+	Rectangle Rec2(2, "Rec2");
+	Rec2.add();
+	Rectangle Rec3(3, "Rec3");
+	Rec3.add();
 
+	Rectangle::show();
 
+	cout << endl << endl;
 
-	cout << "Введите элемент: ";
-	int n;
-	cin >> n;
-	ocher1.push(n);
-	cout << "Наша новая очередь: ";
-	ocher1.write(ocher1);
-	cout << endl;
-
-
-
-	cout << "Размер: ";
-	ocher1.size();
-	cout << endl;
-	
-	cout << "Последний: ";
-	ocher1.back();
-	cout << endl;
-
-	cout << "Первый: ";
-	ocher1.front();
-	cout << endl;
-
-	cout << "Текущие данные:";
-	ocher1.write(ocher1);
-	cout << endl;
-	return 0;
+	Button Butt1; 
+	Butt1.getText();
+	Button Butt2("Click");	
+	Butt2.getText();
+	Button Butt3("DoubClick");
+	Butt3.getText();
 }
 
