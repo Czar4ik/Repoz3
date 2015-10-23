@@ -17,6 +17,19 @@ void Button::getText() const
 };
 
 
+void Button::setNameMenu(char *text)
+{
+	this->text = text;
+};
+
+
+void Button::getNameMenu() const
+{
+	cout << this->text;
+	cout << endl;
+};
+
+
 Button::Button(char *text)
 {
 	std::cout << "Start constr button\n";

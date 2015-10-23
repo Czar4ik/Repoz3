@@ -6,6 +6,7 @@
 #include "Rectangle.h"
 #include "Element upravlenia.h"
 #include "Window.h"
+#include "Menu.h"
 #include "Button.h"
 
 	Figura *Figura::head = NULL;
@@ -25,6 +26,10 @@ int main()
 	Rectangle::show();
 
 	cout << endl << endl;
+	
+	Menu Men1;
+	Men1.setNameMenu("Menushka: ");
+	Men1.getNameMenu();
 
 	Button Butt1; 
 	Butt1.getText();
@@ -32,5 +37,6 @@ int main()
 	Butt2.getText();
 	Button Butt3("DoubClick");
 	Butt3.getText();
+
 }
 

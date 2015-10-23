@@ -7,11 +7,14 @@ class Button
 	:public Element
 {
 public:
-	Button(char *text = "Кнопка");
+	Button(char *text = "Button");
 	~Button();
 
 	void setText(char *text);
 	void getText() const;
+	void setNameMenu(char *text);
+	void getNameMenu() const;
+
 
 private:
 	char *text;
